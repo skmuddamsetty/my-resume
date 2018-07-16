@@ -94,10 +94,6 @@ store.dispatch(
       ],
       expertin: [
         {
-          imageUrl: 'images/npm.svg',
-          imageText: 'NPM'
-        },
-        {
           imageUrl: 'images/nodejs.svg',
           imageText: 'Node JS'
         },
@@ -114,11 +110,11 @@ store.dispatch(
           imageText: 'Redux JS'
         },
         {
-          imageUrl: 'images/express.svg',
+          imageUrl: 'images/typescript.svg',
           imageText: 'Express'
         },
         {
-          imageUrl: 'images/es6.svg',
+          imageUrl: 'images/javascript.svg',
           imageText: 'Express'
         },
         {
@@ -145,6 +141,10 @@ store.dispatch(
         {
           imageUrl: 'images/icon-spring-boot.svg',
           imageText: 'Spring Boot'
+        },
+        {
+          imageUrl: 'images/hibernate.svg',
+          imageText: 'Hibernate'
         }
       ],
       projects: [
