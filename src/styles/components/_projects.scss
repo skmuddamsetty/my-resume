@@ -7,11 +7,6 @@
   grid-gap: 7rem;
 }
 
-.sub-heading {
-  font-family: $font-display;
-  font-weight: 700;
-}
-
 .project {
   background-color: $color-grey-light-3;
   display: grid;
@@ -19,7 +14,31 @@
   grid-row-gap: 1.5rem;
   box-shadow: 0 1.5rem 4rem rgba($color-secondary, 0.15);
   transition: all 0.3s;
-  opacity: 0.7;
+  // opacity: 0.7;
+
+  &__section-heading {
+    // margin-top: 2rem;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1.5rem;
+    grid-column: 1 / -1;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+
+    &::before,
+    &::after {
+      content: '';
+      height: 1px;
+      display: block;
+      background-color: black;
+    }
+  }
+
   &__text {
     grid-row: 1/2;
     grid-column: 1/-1;

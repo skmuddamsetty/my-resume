@@ -153,16 +153,7 @@ const DashboardPage = props => (
         <div className="feature__summary">
           <ul>
             {props.headerInformation.hibernate_summary.map((summary, index) => {
-              return (
-                <div className="feature__summary__point">
-                  <div className="feature__summary__point__icon">
-                    <img src="images/arrow.svg" alt="Node JS" />
-                  </div>
-                  <div className="feature__summary__point__p">
-                    <p key={index}>{summary}</p>
-                  </div>
-                </div>
-              );
+              return <li key={index}>{summary}</li>;
             })}
           </ul>
         </div>
@@ -171,7 +162,7 @@ const DashboardPage = props => (
     {/* <div className="story__pictures" /> */}
     <div className="story__content" />
     <section className="projects">
-      <h2 className="heading-2 heading-2--dark">Projects</h2>
+      <div className="feature__section-heading">Projects</div>
       {props.headerInformation.projects.map((project, index) => {
         return (
           <div className="project" key={index}>
@@ -196,9 +187,7 @@ const DashboardPage = props => (
               </p>
             </div>
             <div className="project__environment">
-              <h4 className="heading-4 heading-4--dark mb-sm__center__border-bottom">
-                Environment
-              </h4>
+              <div className="project__section-heading">Environment</div>
               <div className="project__environment__seenon-logos">
                 {project.environment.map((technology, index) => {
                   return (

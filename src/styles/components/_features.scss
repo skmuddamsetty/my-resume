@@ -94,10 +94,10 @@
     grid-column-gap: 1.5rem;
     align-items: center;
     text-transform: capitalize;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.15rem;
     font-size: 1.6rem;
     color: $color-grey-light-1;
-
+    text-shadow: 5px 5px 10px black;
     &::before,
     &::after {
       content: '';
@@ -142,6 +142,7 @@
     overflow-y: auto;
     max-height: 30vh;
     li {
+      letter-spacing: 0.15rem;
       list-style-position: inside;
       display: list-item;
       margin-bottom: 1rem;

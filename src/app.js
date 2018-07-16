@@ -95,11 +95,56 @@ store.dispatch(
       expertin: [
         {
           imageUrl: 'images/npm.svg',
+          imageText: 'NPM'
+        },
+        {
+          imageUrl: 'images/nodejs.svg',
           imageText: 'Node JS'
+        },
+        {
+          imageUrl: 'images/angular-icon.svg',
+          imageText: 'Angular JS'
         },
         {
           imageUrl: 'images/react.svg',
           imageText: 'React JS'
+        },
+        {
+          imageUrl: 'images/redux.svg',
+          imageText: 'Redux JS'
+        },
+        {
+          imageUrl: 'images/express.svg',
+          imageText: 'Express'
+        },
+        {
+          imageUrl: 'images/es6.svg',
+          imageText: 'Express'
+        },
+        {
+          imageUrl: 'images/html-5.svg',
+          imageText: 'HTML 5'
+        },
+        //Styling Frameworks
+
+        {
+          imageUrl: 'images/sass.svg',
+          imageText: 'SASS'
+        },
+        {
+          imageUrl: 'images/bootstrap.svg',
+          imageText: 'Bootstrap'
+        },
+        //Front End Build Softwares
+        {
+          imageUrl: 'images/gulp.svg',
+          imageText: 'Gulp'
+        },
+
+        //BACK END
+        {
+          imageUrl: 'images/icon-spring-boot.svg',
+          imageText: 'Spring Boot'
         }
       ],
       projects: [
