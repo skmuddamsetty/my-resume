@@ -5,15 +5,18 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 7rem;
+  // background-color: #f1f3f4;
 }
 
 .project {
-  background-color: $color-grey-light-3;
+  background-color: #ffffff;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+  border-radius: 50px;
   grid-row-gap: 1.5rem;
   box-shadow: 0 1.5rem 4rem rgba($color-secondary, 0.15);
   transition: all 0.3s;
+  padding: 3rem;
   // opacity: 0.7;
 
   &__section-heading {
@@ -65,8 +68,8 @@
       justify-self: center;
       align-self: start;
       font-family: $font-display;
-      font-size: 1.6rem;
-      font-weight: 400;
+      font-size: 1.8rem;
+      font-weight: 300;
       margin: 2rem 2rem;
       color: $color-secondary;
     }
@@ -124,9 +127,9 @@
     }
   }
   &:hover {
-    background-color: $color-grey-light-1;
+    // background-color: $color-grey-light-1;
     box-shadow: 0 1.5rem 4rem rgba($color-secondary, 0.35);
-    transform: scale(1.05);
+    transform: scale(1.03);
     opacity: 1;
   }
 }

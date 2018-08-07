@@ -33,8 +33,26 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
 
-  @media only screen and (max-width: $bp-largest) {
-    font-size: 50%;
+  // @media only screen and (max-width: $bp-largest) {
+  //   font-size: 50%;
+  // }
+  @include respond(tab-land) {
+    //checks if width is less than or equal to 1200px
+    font-size: 56.25%; //9px
+  }
+
+  @include respond(tab-port) {
+    //checks if width is less than or equal to 900px
+    font-size: 50%; //8px
+  }
+
+  // @include respond(phone) {
+  //   //checks if width is less than or equal to 600px
+  //   font-size: 30%; //4.8px
+  // }
+
+  @include respond(big-desktop) {
+    font-size: 75%; //12px
   }
 }
 
@@ -43,19 +61,23 @@ body {
   color: $color-grey-dark-2;
   font-weight: 300;
   line-height: 1.6;
+  background-color: #f1f3f4;
 }
 
 .container {
   display: grid;
   grid-template-rows: 100vh min-content 40vw repeat(3, min-content);
   grid-template-columns:
-    [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr)
+    [sidebar-start] 0.00001rem [sidebar-end full-start] minmax(6rem, 1fr)
     [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
     [center-end] minmax(6rem, 1fr)
     [full-end];
 
   @media only screen and (max-width: $bp-large) {
-    grid-template-rows: 6rem 95vh min-content 40vw repeat(3, min-content);
+    grid-template-rows: 0.0000001rem 95vh min-content 40vw repeat(
+        3,
+        min-content
+      );
     grid-template-columns:
       [full-start] minmax(6rem, 1fr) [center-start] repeat(
         8,
@@ -65,6 +87,6 @@ body {
   }
 
   @media only screen and (max-width: $bp-medium) {
-    grid-template-rows: 6rem calc(100vh - 6rem);
+    grid-template-rows: 0.00000001rem calc(100vh - 6rem);
   }
 }
