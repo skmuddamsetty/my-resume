@@ -92,6 +92,7 @@
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
+  font-weight: 400;
   @include respond(tab-port) {
     font-size: 3rem;
     margin: 0;
